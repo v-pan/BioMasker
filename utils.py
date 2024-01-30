@@ -1,6 +1,8 @@
 from typing import List
+
 import numpy as np
 from matplotlib import pyplot as plt
+
 import torch
 import torchvision
 

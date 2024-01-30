@@ -1,10 +1,15 @@
-import lightning.pytorch as pl
-from lightning.pytorch.callbacks import ModelCheckpoint
 from datasets import SegDataModule
 from models import ConvNet
-from lightning import seed_everything
-from tqdm import tqdm
+
+import torch
 import torch.optim as optim
+
+import lightning.pytorch as pl
+from lightning.pytorch.callbacks import ModelCheckpoint
+from lightning import seed_everything
+
+from tqdm import tqdm
+
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 

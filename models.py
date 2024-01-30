@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 
+
 class SegModel(nn.Module):
 
     def __init__(self, nLayers, inputChannels=3, outputChannels=1, lossWeights=None):

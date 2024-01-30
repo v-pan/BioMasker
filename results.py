@@ -1,9 +1,11 @@
 import json
-import torch
-from albumentations.pytorch import ToTensorV2
+
 from datasets import SegDataset
 from model import ConvNet
 from utils import mask_to_rle
+
+import torch
+from albumentations.pytorch import ToTensorV2
 
 def main():
     

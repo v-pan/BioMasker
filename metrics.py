@@ -1,8 +1,8 @@
-import numpy as np
-from abc import ABCMeta, abstractmethod
 from collections import OrderedDict
 from typing import Any, List, Optional, Sequence, Union, Dict
 from abc import ABCMeta, abstractmethod
+
+import numpy as np
 
 
 class BaseMetric(metaclass=ABCMeta):
